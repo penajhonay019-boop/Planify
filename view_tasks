@@ -1,0 +1,8 @@
+def view_tasks(tasks):
+    print("----- TASK LIST -----")
+
+    for task in tasks:
+        print("Title:", task["title"])
+        print("Deadline:", task["deadline"])
+        print("Status:", task["completed"])
+        print("---------------------")
