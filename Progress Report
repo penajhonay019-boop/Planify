@@ -1,0 +1,5 @@
+def track_progress(tasks):
+    total = len(tasks)
+    done = sum(1 for t in tasks if t["completed"])
+    percent = (done / total * 100) if total else 0.0
+    print(f"Completed: {done}/{total} ({percent:.1f}%)")
